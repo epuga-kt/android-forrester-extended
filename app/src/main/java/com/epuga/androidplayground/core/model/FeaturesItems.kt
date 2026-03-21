@@ -10,8 +10,13 @@ data class FeaturesItems(
 
 val featuresList = listOf(
     FeaturesItems(
-        CatalogRoutes.Browser,
+        CatalogRoutes.Browser(titleTopAppBar = "Browser WebView"),
         "Browser Feature",
         "Browser based in WebView class adapted in Jetpack Compose"
+    ),
+    FeaturesItems(
+        destination = CatalogRoutes.GreetingUser(titleTopAppBar = "Greeting"),
+        title = "Greeting User",
+        description = "Feature for catch de user data like first name and last name to display the greeting message"
     )
 )
